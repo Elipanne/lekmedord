@@ -27,15 +27,15 @@ Nettsida bruker de faktiske filnavnene i GitHub, og store/små bokstaver må ste
 
 ## Prototype
 
-Prototypen inneholder én eksempeloppgave i hver av disse kategoriene:
+Prototypen inneholder disse seks kategoriene:
 
-1. Første og siste lyd
+1. Lyd og bokstav
 2. Rim
 3. Stavelser
 4. Sett sammen lyder
-5. Legg til eller ta bort en lyd
-6. Bygg ordet
-7. Hvilken skal ut?
-8. Bokstav og lyd
+5. Bygg ordet
+6. Hvilken skal ut?
+
+Kategorien **Lyd og bokstav** inneholder flere varianter, blant annet første/siste lyd, om et ord inneholder en lyd, og kobling mellom fonem og grafem.
 
 Når en kategori senere har flere oppgaver, velger spillet opptil 10 oppgaver i tilfeldig rekkefølge per runde.
