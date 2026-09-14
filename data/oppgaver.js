@@ -4,10 +4,10 @@
 window.OPPGAVEBANK = {
   kategorier: [
     {
-      id: "forsteOgSisteLyd",
-      tittel: "Første og siste lyd",
+      id: "lydOgBokstav",
+      tittel: "Lyd og bokstav",
       ikon: "👂",
-      beskrivelse: "Lytt etter lyder i ord.",
+      beskrivelse: "Lytt etter lyder og koble dem til bokstaver.",
       oppgaver: [
         {
           id: "FL01",
@@ -19,6 +19,16 @@ window.OPPGAVEBANK = {
           svarformat: "bokstavvalg",
           alternativer: ["S", "M", "F", "L"],
           riktigSvar: "S"
+        },
+        {
+          id: "BL01",
+          variant: "lyd til bokstav",
+          instruksjon: "Hvilken bokstav passer til lyden?",
+          stimulusTekst: "/f/",
+          stimulusLyd: { fil: "lyd/Fonem_f.m4a" },
+          svarformat: "bokstavvalg",
+          alternativer: ["F", "S", "V", "M"],
+          riktigSvar: "F"
         }
       ]
     },
@@ -93,28 +103,6 @@ window.OPPGAVEBANK = {
       ]
     },
     {
-      id: "leggTilEllerTaBortLyd",
-      tittel: "Legg til eller ta bort en lyd",
-      ikon: "➕",
-      beskrivelse: "Lek med lydene inni ord.",
-      oppgaver: [
-        {
-          id: "MAN01",
-          variant: "legg til lyd",
-          instruksjon: "Si «ris». Legg til /g/ først. Hvilket ord får du?",
-          stimulusTekst: "ris + /g/",
-          stimulusLyder: [
-            { fil: "lyd/Ris.m4a", etikett: "ris", fallbackTekst: "ris" },
-            { fil: "lyd/Fonem_g.m4a", etikett: "/g/" }
-          ],
-          svarformat: "tekstvalg",
-          alternativer: ["gris", "ris", "is", "gress"],
-          riktigSvar: "gris",
-          riktigLyd: { fil: "lyd/Gris.m4a", fallbackTekst: "gris" }
-        }
-      ]
-    },
-    {
       id: "byggOrdet",
       tittel: "Bygg ordet",
       ikon: "🔤",
@@ -154,24 +142,6 @@ window.OPPGAVEBANK = {
             { tekst: "sol", bilde: "bilder/sol.png", lyd: { fil: "lyd/Sol.m4a", fallbackTekst: "sol" } }
           ],
           riktigSvar: "sol"
-        }
-      ]
-    },
-    {
-      id: "bokstavOgLyd",
-      tittel: "Bokstav og lyd",
-      ikon: "🔊",
-      beskrivelse: "Koble lyd og bokstav.",
-      oppgaver: [
-        {
-          id: "BL01",
-          variant: "lyd til bokstav",
-          instruksjon: "Hvilken bokstav passer til lyden?",
-          stimulusTekst: "/f/",
-          stimulusLyd: { fil: "lyd/Fonem_f.m4a" },
-          svarformat: "bokstavvalg",
-          alternativer: ["F", "S", "V", "M"],
-          riktigSvar: "F"
         }
       ]
     }
