@@ -10,7 +10,7 @@ window.OPPGAVEBANK = {
       beskrivelse: "Lytt etter lyder og koble dem til bokstaver.",
       oppgaver: [
         {
-          id: "FL01",
+          id: "LYD01",
           variant: "første lyd",
           instruksjon: "Hvilken lyd hører du først i ordet?",
           stimulusTekst: "sol",
@@ -21,7 +21,7 @@ window.OPPGAVEBANK = {
           riktigSvar: "S"
         },
         {
-          id: "BL01",
+          id: "LYD02",
           variant: "lyd til bokstav",
           instruksjon: "Hvilken bokstav passer til lyden?",
           stimulusTekst: "/f/",
