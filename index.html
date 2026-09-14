@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ff">
+  <title>Lek med språk og ord</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <button id="homeBtn" class="ghost-btn hidden" type="button" aria-label="Til forsiden">← Til forsiden</button>
+      <div class="brand">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Lek med språk og ord</span>
+      </div>
+      <div class="topbar-spacer" aria-hidden="true"></div>
+    </header>
+
+    <section id="homeView" class="view">
+      <div class="hero">
+        <p class="eyebrow">Språklek i begynneropplæringen</p>
+        <h1>Lek med språk og ord</h1>
+        <p class="hero-text">Velg en aktivitet. Lytt, se og prøv deg fram.</p>
+      </div>
+      <div id="categoryGrid" class="category-grid" aria-label="Aktiviteter"></div>
+    </section>
+
+    <section id="gameView" class="view hidden" aria-live="polite">
+      <div class="game-head">
+        <div>
+          <p id="categoryLabel" class="eyebrow"></p>
+          <h2 id="taskTitle"></h2>
+        </div>
+        <div id="progress" class="progress-pill"></div>
+      </div>
+
+      <article class="task-card">
+        <div id="stimulusArea" class="stimulus-area"></div>
+        <h3 id="instruction" class="instruction"></h3>
+        <div id="answerArea" class="answer-area"></div>
+        <div id="feedback" class="feedback" aria-live="assertive"></div>
+        <div id="taskActions" class="task-actions"></div>
+      </article>
+    </section>
+  </main>
+
+  <script src="data/oppgaver.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
